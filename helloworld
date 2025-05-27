@@ -1,2 +1,90 @@
 haefsklhasdf
 dsfjhladfshfads
+
+
+git config --global user.name "Mona Lisa"
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git config --global list
+error: key does not contain a section: list
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git config --global --list
+user.name=Mona Lisa
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git config --global user.email "rabinkhatri1949@gmail.com"
+@Rabindra1949 ➜ /workspaces/Skill-Shiksh
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ list
+bash: list: command not found
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git config --global --list
+user.name=Mona Lisa
+user.email=rabinkhatri1949@gmail.com
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git.clone https://github.com/Rabindra1949/Skill-Shikshya.git
+bash: git.clone: command not found
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git clone https://github.com/Rabindra1949/Skill-Shikshya.git
+Cloning into 'Skill-Shikshya'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git push
+Everything up-to-date
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git add .
+warning: adding embedded git repository: Skill-Shikshya
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Skill-Shikshya
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Skill-Shikshya
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ ls
+README.md  Skill-Shikshya  index.html
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Skill-Shikshya
+        new file:   index.html
+
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git commit -m "index.html changes added"
+[main 58afca7] index.html changes added
+ 2 files changed, 26 insertions(+)
+ create mode 160000 Skill-Shikshya
+ create mode 100644 index.html
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 576 bytes | 576.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Rabindra1949/Skill-Shikshya
+   6145c2f..58afca7  main -> main
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git pull
+Already up to date.
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 933 bytes | 933.00 KiB/s, done.
+From https://github.com/Rabindra1949/Skill-Shikshya
+   58afca7..bb95243  main       -> origin/main
+Updating 58afca7..bb95243
+Fast-forward
+ helloworld | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 helloworld
+@Rabindra1949 ➜ /workspaces/Skill-Shiksh
+@Rabindra1949 ➜ /workspaces/Skill-Shiksh
+@Rabindra1949 ➜ /workspaces/Skill-Shikshya (main) $ 
