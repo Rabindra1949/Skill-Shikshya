@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auth Sync Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      background: #f7f7f8;
+      color: #1a1a1a;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: white;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+    .sidebar h2 {
+      margin-bottom: 30px;
+      color: #2f49d1;
+    }
+    .sidebar ul {
+      list-style: none;
+    }
+    .sidebar ul li {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      gap: 8px;
+    }
+    .main {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .totp, .passwords, .vault {
+      margin-top: 20px;
+    }
+    .totp-cards, .password-list, .vault-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1 1 200px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .vault-items .card {
+      flex: 1 1 120px;
+    }
+    .card-row {
+      display: flex;
+      align-items: center;
+      gap: 8px; /* space between checkbox and text */
+    }
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+      .totp-cards, .password-list, .vault-items {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+   
+  
+  <div class="container">
+    
+    <nav class="sidebar">
+       <div style="display: flex; align-items: center;">
+        <img src="https://img.icons8.com/?size=100&id=48344&format=png&color=000000" alt="">
+        <h2 style="margin-left: 10px;">Auth <strong>Sync</strong></h2>
+    </div>
+      
+      <ul>
+        <li>
+          <i class="fa-solid fa-tachometer-alt"></i>
+          <a href="" style="text-decoration: none; color: inherit; margin-left: 8px;">Dashboard</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-key"></i>
+          <a href="" style="text-decoration: none; color: inherit; margin-left: 8px;">TOTP</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-lock"></i>
+         <a href="" style="text-decoration: none; color: inherit; margin-left: 8px;">Password</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-vault"></i>
+         <a href="" style="text-decoration: none; color: inherit; margin-left: 8px;">Vault</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-trash"></i>
+          <a href="" style="text-decoration: none; color: inherit; margin-left: 8px;">Trash</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-gear"></i>
+          <a href="" style="text-decoration: none; color: inherit; margin-left: 8px;">Settings</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="top-bar">
+        <h1>Welcome Subash!</h1>
+        <button>+ Add</button>
+      </div>
+
+      <section class="totp">
+        <h2>TOTP</h2>
+        <div class="totp-cards">
+          <div class="card">
+            <div class="card-row">
+              <input type="checkbox" name="" id="">
+              <p>Google</p>
+            </div>
+            <p>example123@gmail.com</p>
+            <h3>132 546</h3>
+          </div>
+          <div class="card">
+            <div class="card-row">
+              <input type="checkbox" name="" id="">
+              <p>Facebook</p>
+            </div>
+            <p>facebook123@gmail.com</p>
+            <h3>132 546</h3>
+          </div>
+          <div class="card">
+            <div class="card-row">
+              <input type="checkbox" name="" id="">
+              <p>Instagram</p>
+            </div>
+            <p>insta123@gmail.com</p>
+            <h3>132 546</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="passwords">
+        <h2>Password</h2>
+        <div class="password-list">
+          <div class="card">
+            <p><strong>Google</strong></p>
+            <p>user123@example.com</p>
+          </div>
+          <div class="card">
+            <p><strong>Bank 12</strong></p>
+            <p>Owned by John</p>
+          </div>
+          <div class="card">
+            <p><strong>Note title</strong></p>
+            <p>Write description about anything you want…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="vault">
+        <h2>Vault</h2>
+        <div class="vault-items">
+          <div class="card">
+            <p><strong>Family (11)</strong></p>
+            <p>Netflix, Amazon Prime, etc.</p>
+          </div>
+          <div class="card">
+            <p><strong>Office (21)</strong></p>
+            <p>Mobbin, Envato, ChatGPT…</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
